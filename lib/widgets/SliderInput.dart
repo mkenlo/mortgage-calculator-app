@@ -7,7 +7,7 @@ class SliderInput extends StatefulWidget {
   intl.NumberFormat sliderValueFormat;
   double sliderMinValue = 10;
   double sliderMaxValue = 100;
-
+  final ValueChanged<double>? onChanged;
   SliderInput(
       {super.key,
       required this.sliderLabel,
