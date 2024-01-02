@@ -1,16 +1,17 @@
 # mortgage_calculator_app
 
-A mortgage calculator mobile application
+A mortgage calculator mobile application. It is a Flutter project
 
-## Getting Started
+## Requirements
 
-This project is a starting point for a Flutter application.
+Users can set purchase prices
+Users can set down payment
+Users can set repayment time
+Users can set interest rate
+Show users loan amount (purchase price - down payment)
+Show users the estimated amount they'll pay on a monthly basis
 
-A few resources to get you started if this is your first Flutter project:
+## Visual
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![WireFrame](assets/mortage_calculator_wireframe.png)
+[Video](assets/mortgage_calculator_video.webm)
