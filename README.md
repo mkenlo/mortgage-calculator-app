@@ -16,4 +16,4 @@ A mortgage calculator mobile application. It is a Flutter project
 ![WireFrame](assets/mortage_calculator_wireframe.png)
 
 
-[Video](assets/mortgage_calculator_video.webm)
+[Demo](assets/demo.gif)
