@@ -7,14 +7,16 @@ class SliderInput extends StatefulWidget {
   intl.NumberFormat sliderValueFormat;
   double sliderMinValue = 10;
   double sliderMaxValue = 100;
-  final ValueChanged<double>? onChanged;
+  final ValueChanged<double> onValueChanged;
+
   SliderInput(
       {super.key,
       required this.sliderLabel,
       required this.sliderValue,
       required this.sliderMinValue,
       required this.sliderMaxValue,
-      required this.sliderValueFormat});
+      required this.sliderValueFormat,
+      required this.onValueChanged(sliderValue)});
   @override
   State<SliderInput> createState() => _SliderInputState();
 }
@@ -43,9 +45,11 @@ class _SliderInputState extends State<SliderInput> {
         onChanged: (double value) {
           setState((){
             currentSliderValue = value;
+            widget.onValueChanged(currentSliderValue);
           });
 
         },
+
       )
     ]);
   }
